@@ -10,4 +10,9 @@ return [
         'title' => 'About',
         'singleton' => true,
     ],
+
+    'contact' => [
+        'title' => 'Contact',
+        'singleton' => true,
+    ],
 ];

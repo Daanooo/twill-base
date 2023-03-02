@@ -4,11 +4,11 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAboutsTables extends Migration
+class CreateContactsTables extends Migration
 {
     public function up()
     {
-        Schema::create('abouts', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) {
             // this will create an id, a "published" column, and soft delete and timestamps columns
             createDefaultTableFields($table);
 
@@ -19,6 +19,6 @@ class CreateAboutsTables extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('abouts');
+        Schema::dropIfExists('contacts');
     }
 }

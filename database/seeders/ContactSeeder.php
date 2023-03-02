@@ -3,10 +3,10 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Repositories\AboutRepository;
-use App\Models\About;
+use App\Repositories\ContactRepository;
+use App\Models\Contact;
 
-class AboutSeeder extends Seeder
+class ContactSeeder extends Seeder
 {
     /**
      * Create the database record for this singleton module.
@@ -15,12 +15,12 @@ class AboutSeeder extends Seeder
      */
     public function run()
     {
-        if (About::count() > 0) {
+        if (Contact::count() > 0) {
             return;
         }
 
-        app(AboutRepository::class)->create([
-            'title' => 'About',
+        app(ContactRepository::class)->create([
+            'title' => 'Contact',
             'published' => false,
         ]);
     }
