@@ -7,3 +7,5 @@ use Illuminate\Support\Facades\Route;
 Route::twillSingleton('home');
 Route::twillSingleton('about');
 Route::twillSingleton('contact');
+
+Route::module('posts');

@@ -15,4 +15,9 @@ return [
         'title' => 'Contact',
         'singleton' => true,
     ],
+
+    'posts' => [
+        'title' => 'Posts',
+        'module' => true,
+    ],
 ];
