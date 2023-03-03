@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\PostClientController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,5 +21,6 @@ Route::get('/', function () {
 Route::group([
     'prefix' => 'posts',
 ], function() {
-    Route::get('/{slug}', [PostClientController::class, 'single']);
+    Route::get('/', fn() => 'test');
+    Route::get('/{slug}', [PostController::class, 'single'])->name('post');
 });
