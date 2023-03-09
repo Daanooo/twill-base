@@ -3,8 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use A17\Twill\Http\Controllers\Admin\ModuleController as BaseModuleController;
-use App\Models\Post;
-use Illuminate\Http\Request;
 
 class PostController extends BaseModuleController
 {
